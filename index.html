@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Header for Template</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">     
+    </head>
+    <body> 
+      <div class="container">
+        <div class="navbar">
+          <img src="IMG-20201028-WA0006.jpg" class="logo" >
+
+             <a href="services.html">SERVICES</a>
+              <a href="our_work.html">OUR WORK</a>
+              <div class="dropdown"> 
+                <button class="dropbtn" onclick="myFunction()">INDUSTRIES WE SERVE <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content" id="myDropdown"> 
+                <a href="#">Oil and gas industry</a>
+                <a href="#">Financial Services</a>
+                <a href="#">PRofessional Services</a>
+                <a href="#">Technology</a>
+                <a href="#">Small & Large Scale Businesses</a>
+                <a href="#">Health Care</a>
+                <a href="#">Real Estate</a>
+                <a href="#">Academia</a>
+                <a href="#">Entertainment</a>
+              </div>
+              </div>
+             <a href="challenges_we_solve.html">CHALLENGES WE SOLVE</a>
+              <a href="capabilities.html">CAPABILITES</a>
+              <a href="insights.html">INSIGHTS</a>
+             <a href="about.html">ABOUT</a>
+
+            </ul>
+          </nav>
+        </div>
+
+          <div class="row">
+            <div class="col">
+            <h1> WELCOME TO <br> <span>9CRON CORP.</span> </h1>
+              <h2>BEST TECHNOLOGY SERVICES COMPANY</h2>
+              <button type="button">Explore</button>
+            </div>
+
+            <div  class="col" class="img">
+              <img src="IMG-20201028-WA0006.jpg">      
+            </div>
+              </div>
+          </div>
+      </div>
+    </body>
+
+        <script>
+          function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          window.onclick = function(event) {
+            if(!event.target.matches('.dropbtn')){
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+             var i;
+             for (i=0; i < dropdowns.length; i++){
+               var openDropdown = dropdowns[i];
+               if(openDropdown.classList.contains('show')){
+                 openDropdown.classList.remove('show')
+               
+             }
+              }
+            }
+          }
+        </script>
+   
+</html>
+  
